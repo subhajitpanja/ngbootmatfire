@@ -1,0 +1,34 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.mainContent{
+    min-height: 700px;
+}
+
+.sidenav-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.sidenav-content {
+  display: flex;
+  height: 100%;
+ width: 100%;
+  align-self: flex-start;
+  justify-content: center;
+  background-color: darkgray;
+}
+
+.sidenav {
+  padding: 10px;
+}
+.menuIcon {
+    cursor: pointer;
+}
+.sidenav{
+    background-color: ghostwhite;
+    padding-top: 2px;
+}
+.bg-white{
+    background-color: #fff;
+}

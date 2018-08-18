@@ -1,8 +1,29 @@
 <div>
-  <app-sidebar></app-sidebar>
-  <div id="router-outlet">
-    <router-outlet></router-outlet>
-  </div>
+      <mat-drawer-container class="sidenav-container" autosize>
+        <mat-drawer #drawer class="sidenav" mode="side">
+            <app-sidebar></app-sidebar>
+        </mat-drawer>
+      
+        <div class="sidenav-content">
+            <mat-toolbar color="primary">
+                <mat-toolbar-row>
+                      <mat-icon class="menuIcon" type="button" mat-button (click)="drawer.toggle()">reorder</mat-icon>
+                    
+                </mat-toolbar-row>
+              </mat-toolbar>
+          
+        </div>
+        <div class="container-fluid bg-white">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="mainContent">
+                      <router-outlet></router-outlet>
+                    </div>
+                </div>
+              </div>
+        </div>
+      </mat-drawer-container>
+   
 </div>
 
 
