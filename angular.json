@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngbootmatfire": {
+    "ngbootmetfire": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngbootmatfire",
+            "outputPath": "dist/ngbootmetfire",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -56,18 +56,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngbootmatfire:build"
+            "browserTarget": "ngbootmetfire:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngbootmatfire:build:production"
+              "browserTarget": "ngbootmetfire:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngbootmatfire:build"
+            "browserTarget": "ngbootmetfire:build"
           }
         },
         "test": {
@@ -101,7 +101,7 @@
         }
       }
     },
-    "ngbootmatfire-e2e": {
+    "ngbootmetfire-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -109,11 +109,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngbootmatfire:serve"
+            "devServerTarget": "ngbootmetfire:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngbootmatfire:serve:production"
+              "devServerTarget": "ngbootmetfire:serve:production"
             }
           }
         },
@@ -129,5 +129,5 @@
       }
     }
   },
-  "defaultProject": "ngbootmatfire"
+  "defaultProject": "ngbootmetfire"
 }

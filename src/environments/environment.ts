@@ -4,6 +4,14 @@
 
 export const environment = {
   production: false,
+  firebase: {
+    apiKey: "AIzaSyCZPdmZSahXAhOAjAxWgIm4CR0iz641gEc",
+    authDomain: "ngbootmetfire.firebaseapp.com",
+    databaseURL: "https://ngbootmetfire.firebaseio.com",
+    projectId: "ngbootmetfire",
+    storageBucket: "ngbootmetfire.appspot.com",
+    messagingSenderId: "289820208561"
+  }
 };
 
 /*
